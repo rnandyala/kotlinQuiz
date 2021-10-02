@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- login-->
+    <dimen name="loginBtn_padding">20dp</dimen>
+    <dimen name="logo_elevation">4dp</dimen>
+</resources>

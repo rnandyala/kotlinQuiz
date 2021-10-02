@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mRootlayout_quiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/mQuizScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/mMarginstart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/mMarginend"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.9" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mTimeInSeconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amphion_extrabold_regular"
+                android:text="time"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@id/mQuestionMargin"
+                app:layout_constraintStart_toStartOf="@id/mMarginstart"
+                app:layout_constraintTop_toBottomOf="@id/mMarginTop" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mTotalQuestions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amphion_extrabold_regular"
+                android:text="/que"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@id/mQuestionMargin"
+                app:layout_constraintEnd_toEndOf="@id/mMarginend"
+                app:layout_constraintTop_toBottomOf="@id/mMarginTop" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mPresentQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amphion_extrabold_regular"
+                android:text="present"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@id/mQuestionMargin"
+                app:layout_constraintEnd_toStartOf="@id/mTotalQuestions"
+                app:layout_constraintTop_toBottomOf="@id/mMarginTop"
+
+                />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mQuestion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monospace_bold"
+                android:text="Do you like kotlin"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@id/mMarginend"
+                app:layout_constraintStart_toStartOf="@id/mMarginstart"
+                app:layout_constraintTop_toBottomOf="@id/mQuestionMargin" />
+
+
+            <RadioGroup
+                android:id="@+id/mListOfOptions"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="@id/mMarginend"
+                app:layout_constraintStart_toStartOf="@id/mMarginstart"
+                app:layout_constraintTop_toBottomOf="@id/mQuestion">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/radiobutton_background"
+                    android:buttonTint="#61d800"
+                    android:fontFamily="@font/monospace_bold"
+                    android:lineSpacingExtra="10dp"
+                    android:padding="30dp"
+                    android:text="yes"
+                    android:textColor="@android:color/black"
+
+                    />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/option2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/radiobutton_background"
+                    android:buttonTint="#61d800"
+                    android:fontFamily="@font/monospace_bold"
+                    android:lineSpacingExtra="10dp"
+                    android:padding="30dp"
+                    android:text="yes"
+                    android:textColor="@android:color/black" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/option3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/radiobutton_background"
+                    android:buttonTint="#61d800"
+                    android:fontFamily="@font/monospace_bold"
+                    android:lineSpacingExtra="10dp"
+                    android:padding="30dp"
+                    android:text="yes"
+                    android:textColor="@android:color/black" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/option4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/radiobutton_background"
+                    android:buttonTint="#61d800"
+                    android:fontFamily="@font/monospace_bold"
+                    android:lineSpacingExtra="10dp"
+                    android:padding="30dp"
+                    android:text="yes"
+                    android:textColor="@android:color/black" />
+
+            </RadioGroup>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mGoToNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#61d800"
+                android:text="Next"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="@id/mMarginend"
+                app:layout_constraintTop_toBottomOf="@id/mListOfOptions" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mResults"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#61d800"
+                android:text="Results"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@id/mMarginend"
+                app:layout_constraintTop_toBottomOf="@id/mListOfOptions"
+
+                />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/mQuestionMargin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.12" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/mMarginTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.06" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/mMarginBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.9" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

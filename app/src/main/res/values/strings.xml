@@ -1,0 +1,736 @@
+<resources>
+    <string name="app_name">kotlin quiz</string>
+    <string name="facebook_app_id">173622864873024</string>
+    <string name="fb_login_protocol_scheme">fb173622864873024</string>
+
+
+    <string name="title_activity_login">LoginActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <!-- login in -->
+    <string name="facebook">Sign in with facebook</string>
+    <string name="google">Sign in with Google</string>
+    <string name="title_activity_enter_quiz">EnterQuiz</string>
+    <string name="title_activity_main_quiz">MainQuiz</string>
+    <string name="title_activity_quiz">QuizActivity</string>
+    <string name="start">start</string>
+    <string name="end">end</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="instructions"> <![CDATA[a. This is a timed test <br /> <br /> b. Each question is worth of one point<br /> <br />
+    c. one minute time is alloated for each question]]></string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <!-- webclient ID for firebase authentication-->
+    <string name="default_web_client_id_google">976373908051-mdgtkv82sl4ek311jb9juhrl7k8cgoho.apps.googleusercontent.com</string>
+
+    <!-- quiz questions -->
+    <!--
+    <string name="question1">How well do you know kotlin</string>
+    <string name="a">a.one</string>
+    <string name="b">b.two</string>
+    <string name="c">c.three</string>
+    <string name="d">d.four</string>
+    <string name="correct1">4</string>
+    <string name="question2"><![CDATA[what is <font color=\'#4278f5\'>lateinit</font> used for?]]> </string>
+    <string name="a2">a.initialize variable instantly </string>
+    <string name="b2">b.assign value later in the stage </string>
+    <string name="c2">c.It does not belong to kotlin </string> -->
+    <!--<font color=\'#cc0029\'>Some</font> -->
+
+
+    <!--
+    <string name="d2">
+
+<![CDATA[ d. it is same as var]]>
+    </string>
+    <string name="correct2">1</string>
+    <string name="question3">Do you need specify type for a variable?</string>
+    <string name="a3">a.yes</string>
+    <string name="b3">b.no that is not mandatory in kotlin </string>
+    <string name="c3">c. It is same as java every varible should be given a type</string>
+    <string name="d3">d. All of them </string>
+    <string name="correct3">2</string> -->
+
+    <string name="question1">
+        <![CDATA[ what does <font color=\'#4278f5\'>!!</font> represent in kotlin ]]></string>
+    <string name="a">a. it represents null values are accepted </string>
+    <string name="b">b. it is same as not operator </string>
+    <string name="c">c. it is a non null operator </string>
+    <string name="d">d. there is converts string to double</string>
+    <string name="correct1">4</string>
+
+    <string name="question2">
+        <![CDATA[ what is the use of <font color=\'#4278f5\'>coroutine</font>  in kotlin]]></string>
+    <string name="a2">a. To perform a task synchronously</string>
+    <string name="b2">b. To perform a task asynchronously</string>
+    <string name="c2">c. There is nothing like coroutine in kotlin </string>
+    <string name="d2">d. all of them</string>
+    <string name="correct2">2</string>
+
+    <string name="question3">
+        <![CDATA[ can a <font color=\'#4278f5\'>coroutine</font> contain these keywords]]></string>
+    <string name="a3">a. Deferred</string>
+    <string name="b3">b. Async</string>
+    <string name="c3">c. await and launch </string>
+    <string name="d3">d. all of them</string>
+    <string name="correct3">4</string>
+
+    <string name="question4">
+        <![CDATA[ when you create <br>a <font color=\'#4278f5\'>coroutine</font> </br> <br>using async, launch</br> <br>and await</br>
+<br>lateinit  var mName:String </br>
+<br>GlobalScope.launch(Dispatchers.Main) { </br>
+<br>mName = getDataFromAPI().await() </br>
+<br>textview.setText(mName)</br>
+ <br>}</br>]]>
+</string>
+    <string name="a4">a. The above code executes in a sequence and await blocks execution of textview.settext
+until result is obtained from getDataFromAPI </string>
+    <string name="b4">b. The above code executes in a sequence and await does not block the execution of textview.settext until the result is obtained from getDataFromAPI
+</string>
+    <string name="c4">c. Both the cases are correct
+ </string>
+    <string name="d4">d. The above code does not compile as there is no such keyword called globalscope
+</string>
+    <string name="correct4">1</string>
+
+
+    <string name="question5"> <![CDATA[what does <font color=\'#4278f5\'>interoperability</font> mean in kotlin]]></string>
+    <string name="a5">a. Interoperability allows a developer to use both java and kotlin classes in the same project </string>
+    <string name="b5">b. Only kotlin programming language is used in entire project</string>
+    <string name="c5">c. Interoperable means allowing a class written in java to be called by another class written in kotlin
+ </string>
+    <string name="d5">d. Both a,c are correct
+</string>
+    <string name="correct5">4</string>
+
+
+    <string name="question6"> <![CDATA[select valid <font color=\'#4278f5\'>extension</font> function  in kotlin]]></string>
+    <string name="a6">a. <br>fun String.addSpecialCharacter(times: Int=10) =</br> <br>this+”#”.repeat(times)</br>
+ </string>
+    <string name="b6">
+       <![CDATA[ b. <br>fun MutableList<Int>.add(value: Int=20)=</br> <br>this+value</br> ]]>
+</string>
+    <string name="c6">c. both a,b
+
+ </string>
+    <string name="d6">d. none of the above
+</string>
+    <string name="correct6">3</string>
+
+
+    <string name="question7"> <![CDATA[Select an option that suits best for a <font color=\'#4278f5\'> class </font> ?]]></string>
+    <string name="a7">a. a class with open keyword is eligible subclassing
+ </string>
+    <string name="b7">b. public classes can be subclassed
+</string>
+    <string name="c7">c. If there is no modifier for a kotlin class then that represents its public by default
+ </string>
+    <string name="d7"> a, c are correct</string>
+    <string name="correct7">4</string>
+
+
+    <string name="question8"> <![CDATA[  what are <font color=\'#4278f5\'> extension properties </font> in kotlin?]]></string>
+    <string name="a8">a. add additional functionality to the extension property
+
+ </string>
+    <string name="b8">b. <br>Int.reduceValueConstraint get() =</br>minus(100)
+
+
+
+</string>
+    <string name="c8">c. Extension properties are not allowed only extension functions are allowed in kotlin
+
+
+
+ </string>
+    <string name="d8">d. a,b
+
+
+</string>
+    <string name="correct8">4</string>
+
+
+    <string name="question9"> <![CDATA[  How can an
+<font color=\'#4278f5\'> abstract class </font> act?]]></string>
+    <string name="a9">a. abstract class acts as a superclass
+ </string>
+    <string name="b9">b. we can directly create an instance of an abstract class
+</string>
+    <string name="c9">c. it is same as interface</string>
+    <string name="d9"> all of them
+</string>
+    <string name="correct9">1</string>
+
+
+    <string name="question10"> <![CDATA[
+select an appropriate answer]]></string>
+    <string name="a10">a. interfaces can have both abstract properties and abstract methods</string>
+    <string name="b10">b. interfaces are just like class</string>
+    <string name="c10">c. interface can have default methods</string>
+    <string name="d10">d. a,c</string>
+    <string name="correct10">4</string>
+
+
+    <string name="question11"> <![CDATA[object Person{
+<br>Init{ </br>
+<br>println(“welcome user”)</br>
+}
+
+<br>fun gotoWork(){ </br>
+<br>println(“your job is develop apps using kotlin”) </br>
+<br>}</br>
+
+<br>}</br>
+]]></string>
+    <string name="a11">a. Welcome user
+Your job is develop apps using kotlin
+    </string>
+    <string name="b11">b. does not compile as there is keyword like object
+</string>
+    <string name="c11">c. Welcome user</string>
+    <string name="d11">d. a, c
+</string>
+    <string name="correct11">1</string>
+
+
+    <string name="question12"> <![CDATA[ class Olympics{
+<br>companion object{ </br>
+<br>private var mFavoriteGame = </br> <br>println(“batmiton”) </br>
+<br>}</br>
+<br>}</br>
+<br>fun main(){ </br>
+<br>var mOlympics:Olympics=</br>
+<br>Olympics()</br>
+<br>}</br>
+]]></string>
+    <string name="a12">a. above code does not compile
+ </string>
+    <string name="b12">b. prints the batmiton
+</string>
+    <string name="c12">c. cannot initialize println to a variable
+ </string>
+    <string name="d12">d. a,c
+</string>
+    <string name="correct12">2</string>
+
+
+    <string name="question13"> <![CDATA[
+class Books{
+<br>companion object{</br>
+<br>private var mFavoritebook= </br> <br>println(“a ture story of once life”)</br>
+<br>}</br>
+<br>companion object{</br>
+<br>private var mleastFavorite</br> = <br>println(“nothing as of now ”)</br>
+<br>}</br>
+<br>}</br>
+]]></string>
+    <string name="a13">a. only one companion object is allowed in a class
+ </string>
+    <string name="b13">b. a true story of once life
+nothing as of now
+</string>
+    <string name="c13">c. prints only true story of once life
+ </string>
+    <string name="d13">d. prints only nothing as of now
+</string>
+    <string name="correct13">1</string>
+
+
+    <string name="question14"> <![CDATA[
+
+what are built in functions in a dataclass?]]></string>
+    <string name="a14">a. equals() : Boolean
+
+ </string>
+    <string name="b14">b. hashCode():Int , copy()
+
+</string>
+    <string name="c14">
+toString(): String , componentN()
+
+ </string>
+    <string name="d14">d. all of the above
+</string>
+    <string name="correct14">4</string>
+
+
+    <string name="question15"> <![CDATA[<br>open class Animal(</br> <br>val mSpeed:String){ </br>
+<br>fun speed() =”$mSpeed”</br>
+<br>fun color() = “yellow”</br>
+<br>}</br>
+ <br>class Camel : Animal(“60”)</br>
+ <br>{</br>
+<br>override fun color()=</br> <br> “brown”</br>
+<br>}</br>]]></string>
+    <string name="a15">a. above code does not compile
+ </string>
+    <string name="b15">b. above code compile but does not run
+</string>
+    <string name="c15">
+compile and runs properly
+ </string>
+    <string name="d15">d. None of the above
+</string>
+    <string name="correct15">4</string>
+
+    <string name="question16"> <![CDATA[
+Which of the statement is correct?
+
+]]></string>
+    <string name="a16">a. subclasses cannot have the method of their own
+
+
+
+ </string>
+    <string name="b16">b. subclasses cannot have the method of their own
+
+
+
+</string>
+    <string name="c16">
+c.	both a,b
+ </string>
+    <string name="d16">d. none of the above
+</string>
+    <string name="correct16">2</string>
+<!--  <font color=\'#4278f5\'>!!</font>  -->
+    <string name="question17"> <![CDATA[
+What is the difference between <font color=\'#4278f5\'>is and as</font> operator?
+
+]]></string>
+    <string name="a17">a. Is operator is for type checking where as operator for type casting
+
+
+
+
+ </string>
+    <string name="b17">b. Is and as operators both are used for type casting
+
+
+
+
+</string>
+    <string name="c17">
+	Both a,b are correct
+
+ </string>
+    <string name="d17">d. None of the above
+
+</string>
+    <string name="correct17">1</string>
+
+
+    <string name="question18"> <![CDATA[
+Describe what Any keyword is used for in kotlin?]]></string>
+    <string name="a18">a. Any is the super class of all class
+
+
+
+
+ </string>
+    <string name="b18">b. This not a valid keyword
+
+
+
+
+</string>
+    <string name="c18">
+Any keyword is used to convert string to integer
+
+ </string>
+    <string name="d18">d. None of the above
+</string>
+    <string name="correct18">2</string>
+
+
+    <string name="question19"> <![CDATA[
+what is the valid way of creating a constructor in kotlin
+]]></string>
+    <string name="a19"> class Person(mName: String, mAge:Int, isMale:Boolean)
+
+
+
+
+ </string>
+    a.
+    <string name="b19">b. <br>class Employee(var employeeSalary: String,</br> <br> var employeeDesignation:String)</br>
+
+
+
+
+</string>
+    <string name="c19">
+Both a,b
+
+ </string>
+    <string name="d19">d. None of the above
+
+
+
+</string>
+    <string name="correct19">3</string>
+
+
+    <string name="question20"> <![CDATA[
+How many type of constructors are present in kotlin]]></string>
+    <string name="a20"> a. There are two flavors primary and secondary constructor. MULITPLE secondary constructors can be defined
+
+
+
+
+
+ </string>
+    <string name="b20">b. There is only primary constructor
+
+
+
+
+
+</string>
+    <string name="c20">
+c.	Class does not need a constructor
+ </string>
+    <string name="d20">d. All of the them</string>
+    <string name="correct20">1</string>
+
+
+    <string name="question21"> <![CDATA[class Library(
+	<br>_bookName: String, </br>
+<br>mUUID:String,</br>
+<br>mTotalStaff:Int){</br>
+
+<br>constructor(</br>
+
+<br>mBookName:String</br>
+
+):<br>this(</br>
+
+<br>mBookname,</br> <br>“1234”,<br>5) </br>
+
+<br>}</br>
+]]></string>
+    <string name="a21"> Above code executes without any compile time errors
+ </string>
+    <string name="b21">b. Above code does not compile
+</string>
+    <string name="c21">
+c.The above code is an example of primary and secondary constructor with no compile time errors
+</string>
+    <string name="d21">d. None of the above
+</string>
+    <string name="correct21">3</string>
+
+
+    <string name="question22"> <![CDATA[
+class Student(
+<br>mStudentName:String,</br>
+<br>mStudentId:Int, </br>
+<br>mClassRank:Int = 3</br>
+)
+
+]]></string>
+    <string name="a22"> Above code is an example of providing default argument values
+    </string>
+    <string name="b22">b.
+Initialization of arguments in a constructor is prohibited in kotlin
+
+
+
+
+
+
+
+</string>
+    <string name="c22">
+c. Above code does not compile. There should be minimum two constructors
+
+
+
+</string>
+    <string name="d22"> d. a,b
+
+
+</string>
+    <string name="correct22">1</string>
+
+
+    <string name="question23"> <![CDATA[
+class College(
+<br>mNameOfCollege:String, </br>
+<br>mRanking:Int,</br>
+<br>mCrimeRate:Int)</br>
+<br>College(</br> <br>mNameOfCollege = “alabama”,</br><br>mRanking=10,</br> <br>mCrimeRate:5)</br>
+]]></string>
+    <string name="a23"> a. above code compiles and runs with out any error
+
+
+
+
+
+
+
+
+ </string>
+    <string name="b23">b.
+Only values need to be provided while calling the class
+
+
+
+
+
+
+
+</string>
+    <string name="c23">
+c. Compile time error because of instantiation error
+
+
+
+
+</string>
+    <string name="d23"> d. b,c
+</string>
+    <string name="correct23">1</string>
+
+
+    <string name="question24"> <![CDATA[
+Select one of the following  ]]></string>
+    <string name="a24"> a. A class can contain primary constructor, multiple secondary constructor and a initialization block
+
+
+
+
+
+
+
+
+
+ </string>
+    <string name="b24">b.
+Initialization block can be used to check or validate the user inputs
+
+
+
+
+
+
+
+</string>
+    <string name="c24">
+c. Initialization cannot be added to a class it only present in object class
+
+
+
+
+
+</string>
+    <string name="d24"> d. a,b
+
+
+
+
+</string>
+    <string name="correct24">4</string>
+
+    <string name="question25"> <![CDATA[
+Delaying initialization using lateinit keyword: ]]></string>
+    <string name="a25"> a. Delaying initialization using lateinit keyword:
+ </string>
+    <string name="b25">b.
+Lateinit should be initialized instantly
+</string>
+    <string name="c25">
+c. Lateinit and val can be used when ever necessary
+
+</string>
+    <string name="d25">d.  All of the above
+</string>
+    <string name="correct25">1</string>
+
+
+    <string name="question26"> <![CDATA[
+class Computer(){
+<br>val mTotalCost = 10000</br>
+<br>init {</br>
+ <br>mCostOfThree = mTotalCost*3</br>
+<br>}</br>
+
+<br>}</br>
+]]></string>
+    <string name="a26"> a. Above code does not compile since when val keyword is used value should be assigned
+ </string>
+    a.
+    <string name="b26">b. Code compile and runs properly
+
+</string>
+    <string name="c26">
+c. Run time exception occurs
+
+
+</string>
+    <string name="d26">d. Init block should be in the above the mTotalcost variable
+
+</string>
+    <string name="correct26">2</string>
+
+
+    <string name="question27"> <![CDATA[class House{
+<br>val mTotalBedroom :Int</br>
+<br>init{</br>
+<br>mTotalBedRoom = 5</br>
+<br>}</br>
+
+<br>}</br>
+]]></string>
+    e.
+    <string name="a27"> a. The above code does not compile and run since all constants should be instantly assigned with a value
+
+ </string>
+    f.
+    <string name="b27"> Compiler is clever can look in init block and assign the value
+
+
+</string>
+    <string name="c27">
+c. Compile fine but throws run time exception
+
+
+
+</string>
+    <string name="d27">d. Avoid using init block
+
+
+</string>
+    <string name="correct27">2</string>
+
+
+    <string name="question28"> <![CDATA[
+class Country
+<br>{</br>
+
+<br>fun getCountryName</br>
+<br>(mCountryName: String =</br> <br>“India”)</br> <br>{</br>
+
+<br>println(“one of the Asian country is ::</br> <br>$mCountryName”)</br>
+<br>}</br>
+
+<br>}</br>
+
+<br>fun main() {</br>
+
+<br>var mPerson: Person = Person() </br>
+
+<br>mPerson.getCountry()</br>
+
+
+<br>}</br>
+
+
+
+
+]]> </string>
+
+
+    <string name="a28">
+a. code compile fine but  throws runtime exception as getCountryName has values initialized
+</string>
+
+    <string name="b28">
+b.	one of the Asian country is :: India
+</string>
+
+    <string name="c28">
+Compiler immediately throws checked exception </string>
+
+    <string name="d28">
+None of the above </string>
+
+    <string name="correct28">2</string>
+
+
+    <string name="question29"> <![CDATA[
+
+What is the difference between internal and protected in kotlin?
+
+
+
+]]> </string>
+
+
+    <string name="a29">
+a. methods or properties will only be accessible with in the module and subclasses have access to protected properties and functions
+</string>
+
+    <string name="b29">
+B. internal is used for make a properties and methods final and subclasses have access to protected properties and functions
+</string>
+
+    <string name="c29">
+Protected and internal both  represents public access to properties and functions  </string>
+
+    <string name="d29">
+All of the above</string>
+    <string name="correct29">1</string>
+    <string name="question30"> <![CDATA[  What is the difference between map, list and set in kotlin?]]> </string>
+
+    <string name="a30">
+a. map store a key value pair and its keys are uniques values can be duplicate , list store values and it can contain duplicate values. Only unique values are allowed in set
+</string>
+
+    <string name="b30">
+b. map, set and list all of them store values in key value pairs
+</string>
+
+    <string name="c30">
+Protected and internal both  represents public access to properties and functions  </string>
+
+    <string name="d30">
+All of the above</string>
+    <string name="correct30">1</string>
+
+
+    <string name="question31"> <![CDATA[class Country{
+<br>val mCountriesList =</br> <br>listOf("india", "america", "germany", "russia")</br>
+<br>fun getValues(){</br>
+           <br> println(</br> <br>mCountriesList.getOrNull(4) ?:</br> <br>"no country available")</br>
+    <br>}</br>
+<br>}</br>
+]]> </string>
+    <string name="a31">
+a. it throws index out of bound exception
+</string>
+    <string name="b31">
+b. above code prints default value that is no country available
+</string>
+    <string name="c31">
+Code does not compile as there is no method like getOrNull
+</string>
+    <string name="d31">
+None of the above
+</string>
+    <string name="correct31">2</string>
+    <string name="question32"> <![CDATA[  what are all the standard functions that accept lambda
+]]> </string>
+    <string name="a32">
+a.apply, let
+</string>
+    <string name="b32">
+b. run, with
+</string>
+    <string name="c32">
+also and takeif</string>
+    <string name="d32">
+All of the above</string>
+    <string name="correct32">4</string>
+
+
+</resources>

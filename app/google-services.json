@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "976373908051",
+    "project_id": "quiz-a2311",
+    "storage_bucket": "quiz-a2311.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976373908051:android:0db983a8aca79dafd23ca6",
+        "android_client_info": {
+          "package_name": "com.nandyala.quizkotlinnandyala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976373908051-0pl5u15t8e6uek73p9rnbpkei6bsuund.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nandyala.quizkotlinnandyala",
+            "certificate_hash": "0fce31fb2867d7c8f3371784c425963025060e43"
+          }
+        },
+        {
+          "client_id": "976373908051-2s4svr42c6d49t61hq521999f4l9brel.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nandyala.quizkotlinnandyala",
+            "certificate_hash": "5073a2da037ab3dd93bc0e22ae88ac0738856353"
+          }
+        },
+        {
+          "client_id": "976373908051-q3tqgv3qpvdkdqjklubqf29mdm138sp1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nandyala.quizkotlinnandyala",
+            "certificate_hash": "b8d6bf0256d5d28cea861af0f1b26617c62f9784"
+          }
+        },
+        {
+          "client_id": "976373908051-mdgtkv82sl4ek311jb9juhrl7k8cgoho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIx4IPLZqX3qF2WGy70M1Gdk6ReC6jF4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976373908051-mdgtkv82sl4ek311jb9juhrl7k8cgoho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
